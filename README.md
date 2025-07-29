@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SpaceX Launches - Next
 
-## Getting Started
+Developed by Muhammad Fadhlurrohman
 
-First, run the development server:
+This is the repository of SpaceX Launches. The frontend is developed using [Next.js 15](https://nextjs.org/). This is a simple webapp to display SpaceX launches from this [SpaceX GraphQL API](https://studio.apollographql.com/public/SpaceX-pxxbxen/variant/current/home).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## First time setup
+
+- Make sure you use the current Node version (found in .nvmrc) by running the following command. If have [nvm](https://github.com/nvm-sh/nvm) installed, you can use the following command to switch to the correct node version: `nvm use`
+- Install packages using `npm install`
+- Make sure the `.env` has the [API Endpoint](https://spacex-production.up.railway.app/) filled in
+- After successful install run the development environment using `npm run dev`
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Project structure
+
+A quick overview of the project is seen below
+
+```text
+spacex-launches-next
+├─ node_modules/
+├─ src/
+│  ├─ app                   Layout and pages of the website
+│  ├─ components            Reusable components used within the app
+│  ├─ gql                   GraphQL Codegen generated files
+│  ├─ hooks                 Hooks used within the app
+│  ├─ i18n                  next-intl configuration files
+│  ├─ lib                   Methods and API options used troughout the app
+│  ├─ messages              Translations used by next-intl
+├─ package.json
+├─ README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Commands
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The following commands are found in `package.json` are used as follows.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`npm run dev` - Starts the development server and runs the graphql-codegen watcher to automatically regenerate typings for GraphQL-related code
 
-## Learn More
+`npm run build` - Create a Next build
+
+## Next.js
+
+This application uses the `app` router of Next.js.
 
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Styling
 
-## Deploy on Vercel
+[Tailwind](https://tailwindcss.com/) is used for all styling. The theme is defined in `src/app/globals.css` and is used troughout the application.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Techstack overview
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Styling: Tailwind
+- Component Library: shadcn
+- Internationalization: next-intl
+- Client state management: Tanstack Query
+- GraphQL Typings: GraphQL Codegen

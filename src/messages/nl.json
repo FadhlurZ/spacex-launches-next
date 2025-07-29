@@ -1,0 +1,71 @@
+{
+  "Navigation": {
+    "launches": "Lanceringen"
+  },
+  "LaunchesPage": {
+    "title": "Lanceringen"
+  },
+  "LaunchDetail": {
+    "payload": "Lading",
+    "payloadTitle": "Lading",
+    "payloadAmount": "Hoeveelheid lading",
+    "rocket": "Raket",
+    "launchDate": "Lanceerdatum",
+    "launchYear": "Jaar van lancering"
+  },
+  "Charts": {
+    "LaunchesPayloadWeight": {
+      "title": "Totale gewicht van lading",
+      "description": "In kilogram",
+      "weight": "Gewicht"
+    },
+    "TotalEnergyConsumptionPerLaunch": {
+      "title": "Totaal energieverbruik per lancering",
+      "description": "In joules",
+      "totalAmountOfEnergy": "Totale hoeveelheid energie"
+    },
+    "TotalEnergyConsumptionAllLaunchesChart": {
+      "title": "Totaal energieverbruik voor deze lanceringen"
+    }
+  },
+  "Cards": {
+    "Launch": {
+      "addToComparison": "Voeg toe aan vergelijking"
+    }
+  },
+  "Dialogs": {
+    "SelectedLaunches": {
+      "title": "Geselecteerde lanceringen",
+      "description": "Je hebt de volgende lanceringen geselecteerd",
+      "closeButton": "Sluit"
+    }
+  },
+  "Drawers": {
+    "SelectedLaunches": {
+      "addToComparison": "Voeg toe aan vergelijking",
+      "selectedLaunchesTitle": "Geselecteerde lanceringen",
+      "selectedLaunchesDescription": "Je hebt de volgende lanceringen geselecteerd voor vergelijking",
+      "compareLaunches": "Vergelijk lanceringen",
+      "cancelButton": "Sluit"
+    }
+  },
+  "Overlays": {
+    "SelectedLaunches": {
+      "amountSelected": "Je hebt {count, plural, =1 {één lancering} other {# lanceringen}} geselecteerd",
+      "deselectAllButton": "Deselecteer alle lanceringen",
+      "seeSelectedButton": "Bekijk alle geselecteerde lanceringen",
+      "compareButton": "Vergelijk lanceringen"
+    }
+  },
+  "Skeletons": {
+    "loading": "Laden"
+  },
+  "LocaleSwitcher": {
+    "label": "Wijzig taal",
+    "locale": "{locale, select, en {🇬🇧 English} nl {🇳🇱 Nederlands} other {Unknown}}"
+  },
+  "NotFoundPage": {
+    "title": "Page is not found",
+    "linkText": "Ga naar lanceringen"
+  }
+}

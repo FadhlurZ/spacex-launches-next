@@ -1,0 +1,71 @@
+{
+  "Navigation": {
+    "launches": "Launches"
+  },
+  "LaunchesPage": {
+    "title": "Launches"
+  },
+  "LaunchDetail": {
+    "payload": "Payload",
+    "payloadTitle": "Payload",
+    "payloadAmount": "Payload Amount",
+    "rocket": "Rocket",
+    "launchDate": "Launch date",
+    "launchYear": "Launch year"
+  },
+  "Charts": {
+    "LaunchesPayloadWeight": {
+      "title": "Total Payload Weight",
+      "description": "In Kilograms",
+      "weight": "Weight"
+    },
+    "TotalEnergyConsumptionPerLaunch": {
+      "title": "Total Energy Usage Per Launch",
+      "description": "In Joules",
+      "totalAmountOfEnergy": "Total amount of energy"
+    },
+    "TotalEnergyConsumptionAllLaunchesChart": {
+      "title": "Total Energy Usage for these launches"
+    }
+  },
+  "Cards": {
+    "Launch": {
+      "addToComparison": "Add to comparison"
+    }
+  },
+  "Dialogs": {
+    "SelectedLaunches": {
+      "title": "Selected Launches",
+      "description": "These are the launches you have selected",
+      "closeButton": "Close"
+    }
+  },
+  "Drawers": {
+    "SelectedLaunches": {
+      "addToComparison": "Add to comparison",
+      "selectedLaunchesTitle": "Selected Launches",
+      "selectedLaunchesDescription": "You have selected the following launches for comparison",
+      "compareLaunches": "Compare launches",
+      "cancelButton": "Close"
+    }
+  },
+  "Overlays": {
+    "SelectedLaunches": {
+      "amountSelected": "You have selected {count, plural, =1 {one launch} other {# launches}}",
+      "deselectAllButton": "Deselect all launches",
+      "seeSelectedButton": "See selected launches",
+      "compareButton": "Compare launches"
+    }
+  },
+  "Skeletons": {
+    "loading": "Loading"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, en {🇬🇧 English} nl {🇳🇱 Nederlands} other {Unknown}}"
+  },
+  "NotFoundPage": {
+    "title": "Page is not found",
+    "linkText": "Go to launches"
+  }
+}
