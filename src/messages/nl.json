@@ -25,7 +25,8 @@
       "totalAmountOfEnergy": "Totale hoeveelheid energie"
     },
     "TotalEnergyConsumptionAllLaunchesChart": {
-      "title": "Totaal energieverbruik voor deze lanceringen"
+      "title": "Totaal energieverbruik voor deze lanceringen",
+      "chartDescription": "Energie"
     }
   },
   "Cards": {

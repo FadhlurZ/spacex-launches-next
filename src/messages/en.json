@@ -25,7 +25,8 @@
       "totalAmountOfEnergy": "Total amount of energy"
     },
     "TotalEnergyConsumptionAllLaunchesChart": {
-      "title": "Total Energy Usage for these launches"
+      "title": "Total Energy Usage for these launches",
+      "chartDescription": "Energy"
     }
   },
   "Cards": {

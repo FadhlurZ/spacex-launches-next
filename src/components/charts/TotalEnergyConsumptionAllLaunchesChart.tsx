@@ -10,6 +10,8 @@ import {
 } from "@/components/ui/chart";
 import { Launch } from "@/gql/graphql";
 import { calculateEnergyConsumption } from "@/lib/helpers/calculateEnergyConsumption";
+import { formatEnergy } from "@/lib/helpers/formatEnergy";
+import { useTranslations } from "next-intl";
 
 interface Props {
   selectedLaunches: Array<Launch> | null;
@@ -21,6 +23,7 @@ export function TotalEnergyConsumptionAllLaunchesChart({
   const chartConfig = retrieveChartConfig(
     selectedLaunches
   ) satisfies ChartConfig;
+  const t = useTranslations("Charts.TotalEnergyConsumptionAllLaunchesChart");
   const chartData = retrieveChartData(selectedLaunches);
 
   const totalAmountOfEnergy = React.useMemo(() => {
@@ -70,7 +73,7 @@ export function TotalEnergyConsumptionAllLaunchesChart({
                       y={(viewBox.cy || 0) + 24}
                       className="fill-muted-foreground"
                     >
-                      Energy
+                      {t("chartDescription")}
                     </tspan>
                   </text>
                 );
@@ -128,10 +131,4 @@ function retrieveChartConfig(selectedLaunches: Props["selectedLaunches"]) {
   });
 
   return chartConfig;
-}
-
-function formatEnergy(joules: number) {
-  if (joules >= 1e12) return `${(joules / 1e12).toFixed(2)} TJ`;
-  if (joules >= 1e3) return `${(joules / 1e3).toFixed(2)} kJ`;
-  return `${joules} J`;
 }
